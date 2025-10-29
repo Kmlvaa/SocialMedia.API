@@ -1,0 +1,6 @@
+﻿namespace SocialMediaAPİ.Files.Seeds
+{
+    public class User
+    {
+    }
+}
