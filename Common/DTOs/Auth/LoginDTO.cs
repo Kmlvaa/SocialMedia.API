@@ -1,6 +1,6 @@
-﻿namespace SocialMediaAPİ.Common.DTOs
+﻿namespace SocialMediaAPİ.Common.DTOs.Auth
 {
-    public class LoginDTO
+    public class LoginDTO : AbstractEntityDTO
     {
     }
 }

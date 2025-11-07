@@ -1,6 +1,7 @@
 ﻿namespace SocialMediaAPİ.Common.Enums
 {
-    public class Currency
+    public enum Currency
     {
+        AZN
     }
 }

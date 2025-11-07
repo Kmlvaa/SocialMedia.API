@@ -1,6 +1,8 @@
 ﻿namespace SocialMediaAPİ.Common.Exceptions
 {
-    public class UnauthorizedException
+    public class UnauthorizedException : Exception
     {
+        public UnauthorizedException() : base() { }
+        public UnauthorizedException(string message) : base(message) { }
     }
 }

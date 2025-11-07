@@ -1,6 +1,8 @@
 ﻿namespace SocialMediaAPİ.Common.Exceptions
 {
-    public class BadRequestException
+    public class BadRequestException : Exception
     {
+        public BadRequestException() : base() { }
+        public BadRequestException(string message) : base(message) { }
     }
 }

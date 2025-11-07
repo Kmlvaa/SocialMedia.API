@@ -1,6 +1,8 @@
 ﻿namespace SocialMediaAPİ.Common.Enums
 {
-    public class GenderType
+    public enum GenderType
     {
+        Male,
+        Female
     }
 }

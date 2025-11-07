@@ -1,6 +1,9 @@
 ﻿namespace SocialMediaAPİ.Common.Enums
 {
-    public class UserRoles
+    public enum UserRoles
     {
+        User,
+        Admin,
+        SuperAdmin
     }
 }
