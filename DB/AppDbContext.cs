@@ -1,20 +1,26 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
-using SocialMediaAPİ.Entities;
-using SocialMediaAPİ.Entities.Base;
+using SocialMediaAPİ.DB.Entities;
+using SocialMediaAPİ.DB.Entities.Base;
 using System.Linq.Expressions;
 
 namespace SocialMediaAPİ.DB
 {
-    public class AppDbContext : IdentityDbContext<User, UserRoles, int>
+    public class AppDbContext : IdentityDbContext<User, UserRole, int>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
 
         public DbSet<User> Users {  get; set; }
-        public DbSet<UserRoles> Roles {  get; set; }
+        public DbSet<UserRole> Roles {  get; set; }
+        public DbSet<Certification> Certifications {  get; set; }
+        public DbSet<Education> Educations {  get; set; }
+        public DbSet<Experience> Experiences {  get; set; }
+        public DbSet<Project> Projects {  get; set; }
+        public DbSet<Recommendation> Recommendations {  get; set; }
+        public DbSet<Skill> Skills {  get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

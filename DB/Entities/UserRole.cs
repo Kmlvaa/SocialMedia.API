@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using SocialMediaAPİ.Entities.Base;
 
-namespace SocialMediaAPİ.Entities
+namespace SocialMediaAPİ.DB.Entities
 {
-    public class UserRoles : IdentityRole<int>
+    public class UserRole : IdentityRole<int>
     {
         public virtual ICollection<IdentityUserRole<int>>? Roles { get; set; }
     }

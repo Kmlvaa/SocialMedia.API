@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SocialMediaAPİ.Entities.Base
+namespace SocialMediaAPİ.DB.Entities.Base
 {
     public abstract class AbstractEntity : IEntity
     {

@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using SocialMediaAPİ.Common.DTOs.Auth;
+using SocialMediaAPİ.DB.Entities;
 
 namespace SocialMediaAPİ.Automapper
 {
@@ -6,6 +8,7 @@ namespace SocialMediaAPİ.Automapper
     {
         public AutoMapperProfile()
         {
+            CreateMap<RegisterDTO, User>();
 
         }
     }
